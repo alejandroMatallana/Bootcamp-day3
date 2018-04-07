@@ -1,6 +1,10 @@
 <!--The content below is only a placeholder and can be replaced.-->
 
 
+<div >
 
-<h1>HOLA</h1>
+    <img [src]="(dibujo | async)?.image" width="800" height="500">
+    <p>{{ (dibujo | async)?.answer }}</p>
+    <button (click)="preguntar()">Preguntar</button>
+</div>
 
