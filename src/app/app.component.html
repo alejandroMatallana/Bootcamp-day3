@@ -1,8 +1,8 @@
 <!--The content below is only a placeholder and can be replaced.-->
 
-<div *ngIf="(dibujo | async) as dibujos">
+<div >
 
-    <img [src]="dibujos.image" width="800" height="500">
+    <img [src]="(dibujo | async)?.image" width="800" height="500">
     <p>{{ (dibujo | async)?.answer }}</p>
     <button (click)="preguntar()">Preguntar</button>
 </div>
